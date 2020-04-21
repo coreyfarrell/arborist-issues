@@ -1,0 +1,15 @@
+{
+  "name": "link-package",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Corey Farrell",
+  "license": "MIT",
+  "dependencies": {
+    "is-array": "^1.0.1"
+  }
+}

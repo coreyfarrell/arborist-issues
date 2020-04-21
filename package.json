@@ -1,0 +1,18 @@
+{
+  "name": "arborist-issues",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Corey Farrell",
+  "license": "MIT",
+  "dependencies": {
+    "@npmcli/arborist": "^0.0.0-pre.14",
+    "diff": "^4.0.2",
+    "npm-package-arg": "^8.0.1",
+    "tcompare": "^5.0.1"
+  }
+}

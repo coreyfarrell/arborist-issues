@@ -1,0 +1,81 @@
+{
+  "name": "base-package",
+  "version": "0.1.0",
+  "location": "",
+  "path": "/usr/src/npm/failures/arborist-issues/base-package",
+  "root": "/usr/src/npm/failures/arborist-issues/base-package",
+  "resolved": null,
+  "edgesOut": {
+    "link-package": {
+      "type": "prod",
+      "spec": "file:../link-package",
+      "to": "node_modules/link-package",
+    },
+  },
+  "children": {
+    "link-package": {
+      "name": "link-package",
+      "version": "0.1.0",
+      "location": "node_modules/link-package",
+      "path": "/usr/src/npm/failures/arborist-issues/base-package/node_modules/link-package",
+      "root": "/usr/src/npm/failures/arborist-issues/base-package",
+      "resolved": "file:../../link-package",
+      "target": {
+        "name": "link-package",
+        "version": "0.1.0",
+        "location": "../link-package",
+        "path": "/usr/src/npm/failures/arborist-issues/link-package",
+        "root": "/usr/src/npm/failures/arborist-issues/base-package",
+        "resolved": null,
+        "edgesOut": {
+          "is-array": {
+            "type": "prod",
+            "spec": "^1.0.1",
+            "to": null,
+            "error": "MISSING",
+          },
+        },
+      },
+      "edgesIn": [
+        {
+          "type": "prod",
+          "spec": "file:../link-package",
+          "from": "",
+        },
+      ],
+    },
+  },
+  "meta": {
+    "lockfileVersion": 2,
+    "requires": true,
+    "packages": {
+      "": {
+        "name": "base-package",
+        "version": "0.1.0",
+        "dependencies": {
+          "link-package": "file:../link-package",
+        },
+        "license": "MIT",
+      },
+      "node_modules/link-package": {
+        "resolved": "../link-package",
+        "link": true,
+      },
+      "../link-package": {
+        "name": "link-package",
+        "version": "0.1.0",
+        "dependencies": {
+          "is-array": "^1.0.1",
+        },
+        "license": "MIT",
+      },
+    },
+    "dependencies": {
+      "link-package": {
+        "version": "file:../link-package",
+      },
+    },
+    "name": "base-package",
+    "version": "0.1.0",
+  },
+}

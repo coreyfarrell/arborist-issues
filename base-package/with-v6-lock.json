@@ -1,0 +1,94 @@
+{
+  "name": "base-package",
+  "version": "0.1.0",
+  "location": "",
+  "path": "/usr/src/npm/failures/arborist-issues/base-package",
+  "root": "/usr/src/npm/failures/arborist-issues/base-package",
+  "resolved": null,
+  "edgesOut": {
+    "link-package": {
+      "type": "prod",
+      "spec": "file:../link-package",
+      "to": "node_modules/link-package",
+    },
+  },
+  "children": {
+    "link-package": {
+      "name": "link-package",
+      "version": undefined,
+      "location": "node_modules/link-package",
+      "path": "/usr/src/npm/failures/arborist-issues/base-package/node_modules/link-package",
+      "root": "/usr/src/npm/failures/arborist-issues/base-package",
+      "resolved": "file:../../link-package",
+      "target": {
+        "name": "link-package",
+        "version": undefined,
+        "location": "../link-package",
+        "path": "/usr/src/npm/failures/arborist-issues/link-package",
+        "root": "/usr/src/npm/failures/arborist-issues/base-package",
+        "resolved": null,
+        "children": {
+          "is-array": {
+            "name": "is-array",
+            "version": "1.0.1",
+            "location": "../link-package/node_modules/is-array",
+            "path": "/usr/src/npm/failures/arborist-issues/link-package/node_modules/is-array",
+            "root": "/usr/src/npm/failures/arborist-issues/base-package",
+            "resolved": "https://registry.npmjs.org/is-array/-/is-array-1.0.1.tgz",
+          },
+        },
+      },
+      "edgesIn": [
+        {
+          "type": "prod",
+          "spec": "file:../link-package",
+          "from": "",
+        },
+      ],
+    },
+  },
+  "meta": {
+    "name": "base-package",
+    "version": "0.1.0",
+    "lockfileVersion": 2,
+    "requires": true,
+    "dependencies": {
+      "link-package": {
+        "version": "file:../link-package",
+        "requires": {
+          "is-array": "^1.0.1",
+        },
+        "dependencies": {},
+      },
+      "../link-package": {
+        "dependencies": {
+          "is-array": {
+            "version": "1.0.1",
+            "resolved": "https://registry.npmjs.org/is-array/-/is-array-1.0.1.tgz",
+            "integrity": "sha1-6YUMwsyGDDvAl36EzPDdRkWEJ5o=",
+          },
+        },
+      },
+    },
+    "packages": {
+      "": {
+        "name": "base-package",
+        "version": "0.1.0",
+        "dependencies": {
+          "link-package": "file:../link-package",
+        },
+        "license": "MIT",
+      },
+      "node_modules/link-package": {
+        "resolved": "../link-package",
+        "link": true,
+      },
+      "../link-package": {},
+      "../link-package/node_modules/is-array": {
+        "version": "1.0.1",
+        "integrity": "sha1-6YUMwsyGDDvAl36EzPDdRkWEJ5o=",
+        "resolved": "https://registry.npmjs.org/is-array/-/is-array-1.0.1.tgz",
+      },
+    },
+  },
+}
